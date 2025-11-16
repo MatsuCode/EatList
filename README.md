@@ -1,26 +1,30 @@
-# EatList
+# 🍽️ EatList — Manage your orders straight from the terminal
 
-**EatList** é um aplicativo de terminal para gerenciar listas de pedidos. Ele permite adicionar e remover itens, definir mensagens de saudação e imprimir a lista formatada com as quantidades apropriadas. disponível para Windows e Linux! 🪟🐧
+**EatList** is a fast and simple command-line tool for creating and organizing order lists directly from your terminal.  
+It works on both **Windows** 🪟 and **Linux** 🐧, delivering a clean, lightweight and efficient experience.
 
-## Docs'
+---
 
-- **add (item [quantidade])**: Adiciona um novo item à lista com a quantidade especificada. Se a quantidade não for fornecida, o padrão é 1.
-  - Exemplo: `add "Pão" 3`
+## 📚 Available Commands
 
-- **rm (item [quantidade])**: Remove um item da lista. Se a quantidade não for fornecida, o padrão é 1.
-  - Exemplo: `rm "Pão" 2`
+### ➕ `add (item [quantity])`
+Adds a new item to the list with the specified quantity.  
+If no quantity is provided, the default is **1**.
 
-- **grt (mensagem)**: Define a mensagem de saudação. Use "bom dia", "boa tarde" ou "boa noite".
-  - Exemplo: `grt "boa tarde"`
-
-- **print**: Imprime a lista de pedidos com a mensagem de saudação e as quantidades formatadas.
-  - Exemplo: `print`
-
-## Exemplo de Uso
-
+**Example:**
 ```bash
-./EatList add "Pão" 3
-./EatList add "Leite" 1
-./EatList rm "Pão"
-./EatList grt "boa tarde"
-./EatList print
+add Milk
+add bread 8
+add cheese skewer 5
+```
+
+### ➖ `rm (item [quantity])`
+Removes an existing item from the list with the specified quantity.  
+If no quantity is provided, the default is **1**.
+
+**Example:**
+```bash
+rm Milk
+rm bread 8
+rm cheese skewer 5
+```
